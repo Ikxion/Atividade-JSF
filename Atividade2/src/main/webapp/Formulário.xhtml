@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="_css/main.css" />
+</h:head>
+<h:body>
+	<h:outputText value="Título do Formulário"
+		styleClass="titulo-principal" />
+	<h:form>
+		<h:outputLabel for="nome" value="Nome:" />
+		<h:inputText id="nome" styleClass="campo-texto" />
+		<br />
+
+		<h:outputLabel for="sobrenome" value="Sobrenome:" />
+		<h:inputText id="sobrenome" styleClass="campo-texto" />
+		<br />
+
+		<h:outputLabel for="fone" value="Telefone:" />
+		<h:inputText id="fone" styleClass="campo-texto" />
+		<br />
+
+		<h:outputLabel for="email" value="E-mail:" />
+		<h:inputText id="email" styleClass="campo-texto" />
+		<br />
+
+		<h:commandButton value="Enviar" />
+	</h:form>
+</h:body>
+</html>
