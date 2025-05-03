@@ -1,0 +1,143 @@
+/* Incluir a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Aplicar a fonte Roboto para toda a página */
+body {
+    font-family: 'Roboto', sans-serif; /* Definir a fonte padrão */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Cor de fundo suave para a página */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+}
+
+/* Estilo básico para o formulário */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário */
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os rótulos dos campos */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
+
+/* Estilo dos campos de entrada */
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+/* Foco nos campos */
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button-remover {
+    background-color: red !important;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para campos desabilitados */
+input[disabled], select[disabled], textarea[disabled] {
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+/* Estilo para caixas de seleção e botões de opção */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo para o botão de envio */
+input[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro */
+    width: auto; /* Largura automática */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+}
+
+/* Efeito de hover */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Cor mais escura quando o mouse passa sobre o botão */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+}
+
+/* Efeito de foco */
+input[type="submit"]:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 8px rgba(0, 128, 0, 0.6); /* Adiciona sombra ao botão quando em foco */
+}
+
+/* Estilo para o botão desabilitado */
+input[type="submit"]:disabled {
+    background-color: #b5b5b5; /* Cor de fundo para botão desabilitado */
+    cursor: not-allowed; /* Cursor de "não permitido" */
+    opacity: 0.6; /* Opacidade reduzida */
+}
+
